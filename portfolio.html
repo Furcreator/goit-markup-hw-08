@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Портфоліо</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__elements">
+      <div class="logo">
+        <a href="#"><span class="logo__text">Web</span>Studio</a>
+      </div>
+      <!-- NAVIGATION -->
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-list__item">
+            <a class="navigation-list__link"
+              href="./index.html">Студія</a>
+          </li>
+          <li class="navigation-list__item">
+            <a class="navigation-list__link navigation-list--current navigation-list--selected" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="navigation-list__item">
+            <a class="navigation-list__link" href="#">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="mail-tel">
+        <li class="mail-tel__item">
+          <a class="mail-tel__link" href="mailto:info@devstudio.com">
+            <svg class="mail">
+              <use href="./images/ikons.svg#icon-mail"></use>
+            </svg>info@devstudio.com</a>
+        </li>
+        <li class="mail-tel__item">
+          <a class="mail-tel__link" href="tel:+380961111111">
+            <svg class="tel">
+              <use href="./images/ikons.svg#icon-tel"></use>
+            </svg>+38 096 111 11 11</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- MAIN -->
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="visible-hidden">Портфоліо</h1>
+        <ul class="filters">
+          <li class="filters__item"><button class="filters__button" type="button">Усі</button></li>
+          <li class="filters__item"><button class="filters__button" type="button">Веб-сайти</button></li>
+          <li class="filters__item"><button class="filters__button" type="button">Додатки</button></li>
+          <li class="filters__item"><button class="filters__button" type="button">Дизайн</button></li>
+          <li class="filters__item"><button class="filters__button" type="button">Маркетинг</button></li>
+        </ul>
+        <ul class="posters">
+          <li class="posters__list" tabindex="0">
+            <div class="posters__box">
+              <img class="posters__img" src="./images/portfolio/1.jpg" alt="Технокряк" width="370" />
+              <p class="posters__info">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                це дозволить відвідувачу отримати
+                вичерпні відомості про компанію чи приватну особу.</p>
+            </div>
+            <div class="posters-text">
+              <h2 class="posters-text__title">Технокряк</h2>
+              <p class="posters-text__filter">Веб-сайт</p>
+            </div>
+          </li>
+          <li class="posters__list" tabindex="0">
+            <div class="posters__box"><img class="posters__img" src="./images/portfolio/2.jpg" alt="Постер" width="370" />
+              <p class="posters__info">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                це дозволить відвідувачу отримати
+                вичерпні відомості про компанію чи приватну особу.</p>
+            </div>
+            <div class="posters-text">
+              <h2 class="posters-text__title">Постер New Orlean vs Golden Star</h2>
+              <p class="posters-text__filter">Дизайн</p>
+            </div>
+          </li>
+          <li class="posters__list" tabindex="0">
+            <div class="posters__box"><img class="posters__img" src="./images/portfolio/3.jpg" alt="Ресторан"
+                width="370" />
+              <p class="posters__info">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                це дозволить відвідувачу отримати
+                вичерпні відомості про компанію чи приватну особу.</p>
+            </div>
+            <div class="posters-text">
+              <h2 class="posters-text__title">Ресторан Seafood</h2>
+              <p class="posters-text__filter">Додаток</p>
+            </div>
+          </li>
+          <li class="posters__list" tabindex="0">
+            <div class="posters__box"><img class="posters__img" src="./images/portfolio/4.jpg" alt="Проєкт-prime"
+                width="370" />
+              <p class="posters__info">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                це дозволить відвідувачу отримати
+                вичерпні відомості про компанію чи приватну особу.</p>
+            </div>
+            <div class="posters-text">
+              <h2 class="posters-text__title">Проєкт Prime</h2>
+              <p class="posters-text__filter">Маркетинг</p>
+            </div>
+          </li>
+          <li class="posters__list" tabindex="0">
+            <div class="posters__box"><img class="posters__img" src="./images/portfolio/5.jpg" alt="Проєкт-boxes"
+                width="370" />
+              <p class="posters__info">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                це дозволить відвідувачу отримати
+                вичерпні відомості про компанію чи приватну особу.</p>
+            </div>
+            <div class="posters-text">
+              <h2 class="posters-text__title">Проєкт Prime</h2>
+              <p class="posters-text__filter">Маркетинг</p>
+            </div>
+          </li>
+          <li class="posters__list" tabindex="0">
+            <div class="posters__box"><img class="posters__img" src="./images/portfolio/6.jpg" alt="Inspiration"
+                width="370" />
+              <p class="posters__info">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                це дозволить відвідувачу отримати
+                вичерпні відомості про компанію чи приватну особу.</p>
+            </div>
+            <div class="posters-text">
+              <h2 class="posters-text__title">Inspiration has no Borders</h2>
+              <p class="posters-text__filter">Веб-сайт</p>
+            </div>
+          </li>
+          <li class="posters__list" tabindex="0">
+            <div class="posters__box"><img class="posters__img" src="./images/portfolio/7.jpg" alt="Видання"
+                width="370" />
+              <p class="posters__info">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                це дозволить відвідувачу отримати
+                вичерпні відомості про компанію чи приватну особу.</p>
+            </div>
+            <div class="posters-text">
+              <h2 class="posters-text__title">Видання Limited Edition</h2>
+              <p class="posters-text__filter">Дизайн</p>
+            </div>
+          </li>
+          <li class="posters__list" tabindex="0">
+            <div class="posters__box"><img class="posters__img" src="./images/portfolio/8.jpg" alt="Проєкт-lab"
+                width="370" />
+              <p class="posters__info">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                це дозволить відвідувачу отримати
+                вичерпні відомості про компанію чи приватну особу.</p>
+            </div>
+            <div class="posters-text">
+              <h2 class="posters-text__title">Проєкт LAB</h2>
+              <p class="posters-text__filter">Маркетинг</p>
+            </div>
+          </li>
+          <li class="posters__list" tabindex="0">
+            <div class="posters__box"><img class="posters__img" src="./images/portfolio/9.jpg" alt="Growing-Business"
+                width="370" />
+              <p class="posters__info">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                це дозволить відвідувачу отримати
+                вичерпні відомості про компанію чи приватну особу.</p>
+            </div>
+            <div class="posters-text">
+              <h2 class="posters-text__title">Growing Business</h2>
+              <p class="posters-text__filter">Додаток</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <!-- FOOTER -->
+<footer class="cellar">
+  <div class="container cellar__content">
+    <div>
+      <div class="logo logo--size">
+        <a class="cellar__link" href="#"><span class="logo__text">Web</span>Studio</a>
+      </div>
+      <address class="adds">
+        <ul class="adds__list">
+          <li class="adds__item">
+            <a class="cellar__link" href="https://goo.gl/maps/CDkKfC9SVfXpvFWw6" target="_blank"
+              rel="noopener noreferrer nofollow">м.
+              Київ,
+              пр-т Лесі Українки, 26
+            </a>
+          </li>
+          <li class="adds__item">
+            <a class="cellar__link cellar__link--grey" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="adds__item">
+            <a class="cellar__link cellar__link--grey" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </address>
+    </div>
+    <div class="part-cellar">
+      <h2 class="part-cellar__title">приєднуйтесь</h2>
+      <ul class="cellar-icon">
+        <li class="cellar-icon__list">
+          <a class="cellar-icon__link" href="#"><svg class="cellar-icon__item">
+              <use href="./images/ikons.svg#icon-instagram"></use>
+            </svg></a>
+        </li>
+        <li class="cellar-icon__list">
+          <a class="cellar-icon__link" href="#"><svg class="cellar-icon__item">
+              <use href="./images/ikons.svg#icon-twitter"></use>
+            </svg></a>
+        </li>
+        <li class="cellar-icon__list">
+          <a class="cellar-icon__link" href="#"><svg class="cellar-icon__item">
+              <use href="./images/ikons.svg#icon-facebook"></use>
+            </svg></a>
+        </li>
+        <li class="cellar-icon__list ">
+          <a class="cellar-icon__link" href="#"><svg class="cellar-icon__item">
+              <use href="./images/ikons.svg#icon-linkedin"></use>
+            </svg></a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-form">
+      <h2 class='footer-form__title'>Підпишіться на розсилку</h2>
+      <form>
+        <label>
+          <input name="mail" class="footer-form__input" type="email" placeholder="E-mail">
+        </label>
+        <button class="form-button" type="submit">
+          <div class="form-button__box">
+            <span class="form-button__text">Підписатися</span> <svg class="footer-form__icon">
+              <use href="./images/ikons.svg#icon-send"></use>
+            </svg>
+          </div>
+        </button>
+      </form>
+    </div>
+  </div>
+</footer>
+  <script src="./js/modal.js"></script>
+</body>
+
+</html>

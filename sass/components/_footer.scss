@@ -1,0 +1,134 @@
+
+/* CELLAR CONTENT  */
+
+.logo--size {
+  padding-bottom: 20px;
+}
+
+.logo--white {
+  color: $font-color;
+}
+
+.cellar {
+  background-color: $color-futter;
+  padding: 60px 0;
+
+  &__content {
+  display: flex;
+  align-items: baseline;
+}
+
+&__link {
+  color: $font-color;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__link:hover,
+&__link:focus {
+  color: $accent-color;
+}
+
+&__link--grey {
+  color: rgba(255, 255, 255, 60%);
+}
+}
+
+
+.adds {
+  color: $font-color;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+
+  &__item:not(:last-child) {
+  padding-bottom: 9px;
+}
+
+}
+
+
+
+/* PART CELLAR  */
+
+.part-cellar {
+  margin-left: 70px;
+}
+
+.cellar-icon {
+  display: flex;
+
+  &__link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__list:not(:last-child) {
+  margin-right: 10px;
+}
+
+&__link:hover,
+&__link:focus {
+  background: none;
+  background-color: $accent-color;
+}
+&__item {
+  fill: $font-color;
+  width: 20px;
+  height: 20px;
+}
+}
+
+.part-cellar__title,
+.footer-form__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $font-color;
+}
+
+/* FORM-CELLAR */
+
+.footer-form {
+  margin-left: 93px;
+
+  &__input {
+  height: 50px;
+  width: 358px;
+  padding: 15px 0;
+  padding-left: 16px;
+  margin-right: 12px;
+
+  background-color: var(--color-futter);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: $font-color;
+}
+
+&__input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+&__icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+}

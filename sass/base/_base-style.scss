@@ -1,0 +1,104 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $font-color;
+  color: $primary-text-color;
+  font-family: $fontRob;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+main,
+header > a {
+  letter-spacing: 0.03em;
+}
+
+.visible-hidden {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+/* КОНТЕЙНЕР */
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  @include minW-Phone {
+    width: 480px;
+  }
+
+  @include minW-Tablet {
+    width: 768px;
+  }
+
+  @include minW-Dt {
+    width: 1200px;
+  }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include minW-Dt {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.title {
+  margin-bottom: 30px;
+  color: $primary-text-color;
+  font-size: 28px;
+  line-height: 1.1785;
+  text-align: center;
+
+  @include minW-Dt {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.1666;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

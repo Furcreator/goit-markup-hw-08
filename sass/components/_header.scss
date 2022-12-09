@@ -1,0 +1,22 @@
+.header {
+  color: #ececec;
+  height: 80px;
+  /* padding-top: 24px;
+  padding-bottom: 25px; */
+  border-bottom: 1px solid #ececec;
+
+  
+& a,
+& ul,
+& li,
+& nav {
+  height: 100%;
+}
+
+&__elements {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+}

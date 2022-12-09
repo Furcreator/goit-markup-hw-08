@@ -1,0 +1,55 @@
+.clients-list {
+  display: flex;
+
+  @include minW-Phone {
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-right: 0;
+  }
+
+  @include minW-Tablet {
+  }
+
+  @include minW-Dt {
+    flex-wrap: nowrap;
+  }
+
+  &__link {
+    display: inline-block;
+
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include minW-Phone {
+      width: 210px;
+      padding: 16px 52px;
+    }
+    @include minW-Tablet {
+      width: 226px;
+      padding: 16px 60px;
+    }
+    @include minW-Dt {
+      width: 170px;
+      padding: 16px 32px;
+    }
+  }
+
+  &__icon {
+    fill: $duo-text-color;
+    width: 106px;
+    height: 60px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    fill: $accent-color;
+  }
+
+  &__link:hover {
+    border: 1px solid $accent-color;
+  }
+}
