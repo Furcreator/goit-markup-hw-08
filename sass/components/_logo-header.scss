@@ -1,12 +1,14 @@
 .logo {
   font-family: $fontRel;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.1923;
 
+  @include minW-Dt {
+    font-size: 26px;
+  }
+
   &__text {
-  color: $accent-color;
+    color: $accent-color;
+  }
 }
-}
-
-

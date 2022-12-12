@@ -20,6 +20,7 @@
     }
   }
   @include minW-Dt {
+    gap: unset;
     flex-wrap: nowrap;
     &__item:not(:last-child) {
       margin-bottom: 0;

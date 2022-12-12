@@ -1,9 +1,10 @@
 .header {
   color: #ececec;
-  height: 80px;
-  /* padding-top: 24px;
-  padding-bottom: 25px; */
+  height: 60px;
   border-bottom: 1px solid #ececec;
+  @include minW-Tablet {
+    height: 80px;
+  }
 
   
 & a,
@@ -17,6 +18,10 @@
   display: flex;
   align-items: center;
   height: 100%;
+
+  @include maxW-Tablet {
+    justify-content: space-between;
+  }
 }
 
 }
