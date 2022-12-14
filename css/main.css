@@ -81,7 +81,7 @@ header > a {
     width: 480px;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .container {
     width: 768px;
   }
@@ -185,7 +185,7 @@ img {
   height: 60px;
   border-bottom: 1px solid #ececec;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .header {
     height: 80px;
   }
@@ -202,7 +202,7 @@ img {
           align-items: center;
   height: 100%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header__elements {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -228,7 +228,7 @@ img {
 .navigation {
   display: none;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .navigation {
     display: block;
     margin-left: 87px;
@@ -288,7 +288,7 @@ img {
   display: none;
   margin-left: auto;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .mail-tel {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -392,13 +392,13 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_960.jpg);
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .hat {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/img_768.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_768.jpg);
   }
 }
-@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hat {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/img_1536.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_1536.jpg);
@@ -474,7 +474,7 @@ img {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .hang-list {
     gap: 30px;
   }
@@ -497,7 +497,7 @@ img {
   text-transform: uppercase;
   padding-bottom: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .hang-list__title {
     text-align: center;
   }
@@ -525,7 +525,7 @@ img {
     padding: 25px 190px;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .hang-icon {
     width: 354px;
     padding: 25px 142px;
@@ -602,7 +602,7 @@ img {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .team-list {
     gap: 30px;
   }
@@ -722,7 +722,7 @@ img {
     padding: 16px 52px;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .clients-list__link {
     width: 226px;
     padding: 16px 60px;
@@ -784,7 +784,7 @@ img {
     text-align: start;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .cellar__content--box {
     width: 100%;
   }
@@ -828,7 +828,7 @@ img {
 .part-cellar {
   margin-left: 0;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .part-cellar {
     margin-left: 165px;
   }
@@ -844,7 +844,7 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .cellar-icon {
     margin-bottom: 60px;
   }
@@ -1261,7 +1261,7 @@ img {
   margin: 0;
   list-style: none;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .menu {
     display: none;
   }
@@ -1286,7 +1286,7 @@ img {
   border-radius: 50%;
   outline: none;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .menu__toggle {
     display: none;
   }

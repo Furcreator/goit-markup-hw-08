@@ -7,9 +7,6 @@
     margin-right: 0;
   }
 
-  @include minW-Tablet {
-  }
-
   @include minW-Dt {
     flex-wrap: nowrap;
   }
