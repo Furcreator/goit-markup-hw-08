@@ -1,18 +1,11 @@
-
 .hang-list {
   display: flex;
-
-  @include minW-Phone {
-    flex-wrap: wrap;
-    &__item:not(:last-child) {
-      margin-bottom: 30px;
-    }
-  }
+  flex-basis: calc((100% - 90px) / 4);
+  gap: 30px;
+  flex-wrap: wrap;
 
   @include minW-Tablet {
-    gap: 30px;
     &__item {
-      flex-basis: 50%;
       max-width: 354px;
     }
   }
@@ -46,6 +39,10 @@
   border-radius: 4px;
   margin-bottom: 30px;
   height: 120px;
+  width: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &__item {
     width: 70px;

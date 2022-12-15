@@ -64,10 +64,10 @@
 .mobile-menu {
   &__nav {
     font-weight: 500;
-    font-size: 40px;
-    line-height: 1, 175;
+    line-height: 1.175;
     letter-spacing: 0.02em;
     color: $primary-text-color;
+    font-size: calc(24px + 16 * ((100vw - 320px) / (480 - 320)));
 
     margin-bottom: auto;
 
@@ -93,14 +93,14 @@
   }
   &:first-child {
     font-weight: 500;
-    font-size: 34px;
+    font-size: calc(20px + 16 * ((100vw - 320px) / (480 - 320)));
     line-height: 1.1764;
     letter-spacing: 0.02em;
     margin-bottom: 32px;
   }
   &:last-child {
     font-weight: 500;
-    font-size: 24px;
+    font-size: calc(10px + 16 * ((100vw - 320px) / (480 - 320)));
     line-height: 1.1666;
     letter-spacing: 0.02em;
     margin-bottom: 64px;
@@ -117,7 +117,7 @@
   }
   &__text {
     font-weight: 500;
-    font-size: 18px;
+    font-size: calc(6px + 16 * ((100vw - 320px) / (480 - 320)));
     line-height: 1.222;
     letter-spacing: 0.02em;
     color: $accent-color;

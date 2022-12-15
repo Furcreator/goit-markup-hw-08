@@ -1,18 +1,16 @@
 .clients-list {
   display: flex;
-
-  @include minW-Phone {
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-right: 0;
-  }
-
-  @include minW-Dt {
-    flex-wrap: nowrap;
-  }
+  flex-basis: calc((100% - 150px) / 6);
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 
   &__link {
     display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 
     height: 92px;
     border: 1px solid #afb1b8;

@@ -3,7 +3,8 @@
   @font-face {
     font-family: $font_name;
     font-display: swap;
-    src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+    src: url("../fonts/#{$file_name}.woff") format("woff"),
+      url("../fonts/#{$file_name}.woff2") format("woff2");
     font-weight: #{$weight};
     font-style: #{$style};
   }
@@ -11,7 +12,7 @@
 //@include font("Inter", "Inter-Light", "300", "normal");
 
 //* responsive font size
-$maxWidth: 1440; 
+$maxWidth: 1440;
 $minWidth: 575;
 
 //@include adaptive-font(44, 26); - вказуємо максимальний і мінімальний розмір шрифту
@@ -19,11 +20,13 @@ $minWidth: 575;
 @mixin adaptive-font($pcSize, $mobSize) {
   $addSize: $pcSize - $mobSize;
   $maxWidth: $maxWidth - $minWidth;
-  font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - #{$minWidth + px}) / #{$maxWidth}));
+  font-size: calc(
+    #{$mobSize + px} + #{$addSize} *
+      ((100vw - #{$minWidth + px}) / #{$maxWidth})
+  );
 }
 
 //******/
-
 
 //* media
 $phoneMax: 479px;
@@ -98,4 +101,12 @@ $desctopMin: 1200px;
   }
 }
 
-
+//* Castom font size for mobile menu
+$maxWidth: 480;
+@mixin adaptiv-font($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 320;
+  font-size: calc(
+    #{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})
+  );
+}
