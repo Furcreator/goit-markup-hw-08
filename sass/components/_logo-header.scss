@@ -12,3 +12,11 @@
     color: $accent-color;
   }
 }
+
+.logo-mobile--position {
+    @include maxW-Tablet {
+    position: absolute;
+    left: 15px;
+
+  }
+}
