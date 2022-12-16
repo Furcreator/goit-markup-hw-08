@@ -4,13 +4,21 @@
   gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
+  
+  &__item {
+    flex-basis: calc((100% - 30px) / 2);
+    max-width: 100%;
+    width: 100%;
+    @include minW-Phone {
+      flex-basis: calc((100% - 150px) / 6);
+      width: auto;
+    }
+  }
 
   &__link {
-    display: inline-block;
     display: flex;
     align-items: center;
     justify-content: center;
-    
 
     height: 92px;
     border: 1px solid #afb1b8;
