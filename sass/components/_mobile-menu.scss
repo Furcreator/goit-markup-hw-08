@@ -61,16 +61,18 @@
 
 .nav__text {
   color: $primary-text-color;
-} 
+}
 
 .mobile-menu {
   &__nav {
+    @media screen and (max-width: 390px) {
+      font-size: 35px;
+    }
     font-weight: 500;
+    font-size: 40px;
     line-height: 1.175;
     letter-spacing: 0.02em;
     color: $primary-text-color;
-    font-size: calc(24px + 16 * ((100vw - 320px) / (480 - 320)));
-
     margin-bottom: auto;
 
     &--current {
@@ -80,12 +82,24 @@
 
   &__item {
     &:not(:last-child) {
+      @media screen and (max-width: 390px) {
+        margin-bottom: 16px;
+      }
       margin-bottom: 32px;
     }
   }
 
   &__social {
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  &__contacts {
+    @media screen and (max-width: 390px) {
+      margin-bottom: 54px;
+    }
+    margin-bottom: 64px;
   }
 }
 
@@ -94,32 +108,41 @@
     color: $duo-text-color;
   }
   &:first-child {
+    @media screen and (max-width: 390px) {
+      font-size: 28px;
+      margin-bottom: 25px;
+    }
     font-weight: 500;
-    font-size: calc(20px + 16 * ((100vw - 320px) / (480 - 320)));
+    font-size: 34px;
     line-height: 1.1764;
     letter-spacing: 0.02em;
     margin-bottom: 32px;
   }
   &:last-child {
+    @media screen and (max-width: 390px) {
+      font-size: 18px;
+    }
     font-weight: 500;
-    font-size: calc(10px + 16 * ((100vw - 320px) / (480 - 320)));
+    font-size: 24px;
     line-height: 1.1666;
     letter-spacing: 0.02em;
-    margin-bottom: 64px;
   }
 }
 
 .social {
   &__item {
     &:not(:last-child) {
-      margin-right: 10px;
       padding-right: 10px;
       border-right: 1px solid rgba(33, 33, 33, 0.2);
     }
   }
   &__text {
+    @media screen and (max-width: 390px) {
+      font-size: 16px;
+    }
     font-weight: 500;
-    font-size: calc(6px + 16 * ((100vw - 320px) / (480 - 320)));
+    font-size: 18px;
+    // font-size: calc(6px + 16 * ((100vw - 320px) / (480 - 320)));
     line-height: 1.222;
     letter-spacing: 0.02em;
     color: $accent-color;
